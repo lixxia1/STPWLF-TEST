@@ -36,3 +36,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+  merge-pr:
+    jobs:
+      - approve-merge-pr
