@@ -3,6 +3,8 @@ parameters:
     pEnabled:
       default: false
       type: boolean
+orbs:
+  gh: circleci/github-cli@2.0
 jobs:
   approve-merge-pr:
     docker:
@@ -11,8 +13,6 @@ jobs:
       - checkout
       - run:
           name: "Create Changelog File"
-          command: |
-            echo "Steppenwolf ui clone release"
       - gh/install
       - run:
           name: "Create pull request"
