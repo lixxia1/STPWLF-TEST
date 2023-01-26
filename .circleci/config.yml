@@ -12,6 +12,8 @@ jobs:
       - run:
           name: "Create pull request"
           command: |
+            git config --global user.email "lixxia@cisco.com"
+            git config --global user.name "lixxia1"
             git checkout main
             git merge --no-ff -m "Merge test-branch-1 into master" origin/test-branch-1
 #       - run:
