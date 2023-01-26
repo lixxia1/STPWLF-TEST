@@ -9,7 +9,11 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-#       - gh/install
+      - run:
+          name: "Create Changelog File"
+          command: |
+            echo "Steppenwolf ui clone release"
+      - gh/install
       - run:
           name: "Create pull request"
           command: |
