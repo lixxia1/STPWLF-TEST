@@ -15,6 +15,7 @@ jobs:
       - run:
           name: "Create pull request"
           command: |
+            echo {$GITHUB_TOKEN}
             gh pr create --reviewer lixxia1 --base main --head origin/test-branch-1 --title "test branch pr" --body "test branch pr body description"
       - env:
         GITHUB_TOKEN: $GITHUB_TOKEN
