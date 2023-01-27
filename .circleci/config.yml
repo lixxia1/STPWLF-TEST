@@ -16,7 +16,7 @@ jobs:
           name: "Create pull request"
           command: |
             gh pr create --reviewer lixxia1 --base main --head origin/test-branch-1 --title "test branch pr" --body "test branch pr body description"
-            
+        
 workflows:
   merge-pr:
     jobs:
