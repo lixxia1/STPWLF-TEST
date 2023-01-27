@@ -11,7 +11,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - gh/install
+      - gh/setup
       - run:
           name: "Create pull request"
           command: |
