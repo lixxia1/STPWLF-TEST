@@ -17,8 +17,8 @@ jobs:
           command: |
             echo {$GITHUB_TOKEN}
             gh pr create --reviewer lixxia1 --base main --head origin/test-branch-1 --title "test branch pr" --body "test branch pr body description"
-      - env:
-        GITHUB_TOKEN: $GITHUB_TOKEN
+#       - env:
+#         GITHUB_TOKEN: $GITHUB_TOKEN
 workflows:
   merge-pr:
     jobs:
