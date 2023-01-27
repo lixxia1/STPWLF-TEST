@@ -19,5 +19,8 @@ jobs:
 #        Github token configured in environmental variables within circleci project settings
 workflows:
   merge-pr:
+    when:
+      and:
+        - << pipeline.parameters.pEnabled>> #only run when pipeline is enabled
     jobs:
       - approve-merge-pr
