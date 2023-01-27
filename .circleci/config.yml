@@ -15,7 +15,7 @@ jobs:
       - run:
           name: "Create pull request"
           command: |
-            gh pr create --reviewer lixxia1 --base main --head test-branch-1 --title "test branch pr" --body "test branch pr body description"
+            gh pr create --reviewer lixxia1 --base test-branch-1 --head test-branch-2 --title "test branch pr" --body "test branch pr body description"
 #       - env:
 #         GITHUB_TOKEN: $GITHUB_TOKEN
 workflows:
