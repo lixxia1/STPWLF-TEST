@@ -11,8 +11,6 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run:
-          name: "Create Changelog File"
       - gh/install
       - run:
           name: "Create pull request"
