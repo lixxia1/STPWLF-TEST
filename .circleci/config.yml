@@ -16,7 +16,7 @@ jobs:
           name: "Create pull request"
           command: |
             gh pr create --reviewer lixxia1 --base test-branch-1 --head test-branch-2 --title "test branch pr" --body "test branch pr body description"
-            gh pr merge test-branch-2
+            gh pr merge test-branch-2 --merge
 #        Github token configured in environmental variables within circleci project settings
 workflows:
   merge-pr:
